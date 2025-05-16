@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Finder</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-950 text-white min-h-screen flex flex-col items-center justify-center px-4 py-10">
+    <!-- Header -->
+    <div class="text-center mb-10">
+        <h1 class="text-3xl font-bold">GitHub User Finder</h1>
+        <p class="text-gray-400 mt-2">
+            Search and view GitHub user profiles in style
+        </p>
+    </div>
+
+    <!-- Search -->
+    <div class="w-full max-w-xl flex items-center gap-2 mb-8">
+        <input type="text" placeholder="Enter GitHub username"
+            class="usernameinp flex-1 px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <button class="search px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all">
+            Search
+        </button>
+    </div>
+
+    <!-- GitHub User Card with Dummy Data -->
+    <div class="card w-full max-w-xl bg-gray-900 rounded-lg p-6 border border-gray-800"></div>
+
+    <!-- Footer -->
+    <footer class="mt-10 text-gray-500 text-sm">
+        Built with <span class="text-red-500">❤️</span> using Tailwind CSS
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
